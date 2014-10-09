@@ -15,16 +15,10 @@ describe('Home Controller Tests', function () {
     beforeEach(function () {
         mocks.module(function ($provide) {
             $provide.value("HomeService", {
-                getAlbums : function () {
-                    return [
-                        "Blah"
-                    ]
-                }
+                "getLocation" : jasmine.createSpy("HomeService getLocation")
             });
 
-            $provide.value("$state", {
-                go : jasmine.createSpy("go")
-            })
+            $provide.value("$state", {})
         });
     });
 
@@ -36,24 +30,8 @@ describe('Home Controller Tests', function () {
         })
     });
     
-    it('should pass', function () {
-        expect(sut.albums).toEqual(["Blah"]);
+    it('should be defined', function () {
+        expect(sut).toBeDefined();
     });
     
 });
-
-
-
-
-
-
-// Describe
-
-// Load angular mocks
-// Load the module under test
-
-// Use Angular mocks to load our module
-
-// $provide value for dependencies mocks module
-
-// mocks.inject for controller
