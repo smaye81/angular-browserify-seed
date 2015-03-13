@@ -21,7 +21,7 @@
     "gulp-connect": "^2.0.6"
   },
   "devDependencies": {
-    "karma": "^0.12.23",
+    "karma": "^0.12.32",
     "karma-browserify": "^0.2.1"
   }
 }
