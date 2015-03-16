@@ -7,6 +7,7 @@ Uses:
 
 * Angular
 * Browserify
+* Browserify Shim
 * Angular UI Router
 * Bootstrap
 * Gulp

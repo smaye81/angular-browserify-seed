@@ -17,7 +17,7 @@ module.exports = function (config) {
         files: [
             'app/bower_components/angular/angular.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
-            'app/modules/**/*.js'
+            'app/bundle/testBundle.js'
         ],
 
 
@@ -29,9 +29,7 @@ module.exports = function (config) {
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {
-            'app/modules/**/*.js': ['browserify']
-        },
+        preprocessors: {},
 
 
         // test results reporter to use

@@ -1,3 +1,6 @@
+require('angular');
+require("angular-ui-router");
+
 var homeModule = require("./modules/home/home");
 var router = require("./router");
 

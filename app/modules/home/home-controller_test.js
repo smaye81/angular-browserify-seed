@@ -18,7 +18,7 @@ describe('Home Controller Tests', function () {
                 "getLocation" : jasmine.createSpy("HomeService getLocation")
             });
 
-            $provide.value("$state", {})
+            $provide.value("$state", {});
         });
     });
 
@@ -27,11 +27,11 @@ describe('Home Controller Tests', function () {
             sut = $controller("HomeCtrl", {
                 $scope : $rootScope
             });
-        })
+        });
     });
-    
+
     it('should be defined', function () {
         expect(sut).toBeDefined();
     });
-    
+
 });
