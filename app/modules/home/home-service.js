@@ -1,7 +1,14 @@
-function HomeService () {
+HomeService.$inject = ['$q'];
+
+function HomeService ($q) {
+
+    "use strict";
 
     this.getLocation = function () {
-        return "Browserify";
+
+        return $q(function (resolve) {
+            resolve("Browserify");
+        });
     };
 }
 

@@ -37,8 +37,10 @@ gulp.task('watchify', function () {
 
     var appBundler = watchify(browserify('./app/app.js', watchify.args));
 
-    // Commented out until babelify is working
-    //appBundler.transform(babelify);
+    // Only run files in the modules directory through Babelify
+    appBundler.transform(babelify.configure({
+        only : /modules/
+    }));
 
     function rebundle() {
         return appBundler.bundle()

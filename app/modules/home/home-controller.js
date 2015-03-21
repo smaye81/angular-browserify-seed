@@ -1,8 +1,12 @@
+HomeController.$inject = ['HomeService'];
+
 function HomeController(HomeService) {
 
-    this.location = HomeService.getLocation();
+    "use strict";
+
+    HomeService.getLocation().then(location => this.location = location);
 }
 
 
-module.exports = ['HomeService', HomeController];
+module.exports = HomeController;
 

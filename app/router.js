@@ -1,4 +1,9 @@
+
+Router.$inject = ['$stateProvider', '$urlRouterProvider'];
+
 function Router($stateProvider, $urlRouterProvider) {
+
+    "use strict";
 
     // For any unmatched url, redirect to /home
     $urlRouterProvider.otherwise("/home");

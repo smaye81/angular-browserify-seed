@@ -1,3 +1,5 @@
+"use strict";
+
 describe('Home Controller Tests', function () {
 
     var mocks = angular.mock;
