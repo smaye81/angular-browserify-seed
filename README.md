@@ -1,13 +1,14 @@
 angular-browserify-seed
 =======================
 
-Seed project using Angular and Browserify
+Seed project using Angular and Browserify with Babelify support for ES6 syntax
 
 Uses:
 
 * Angular
 * Browserify
 * Browserify Shim
+* Babelify
 * Angular UI Router
 * Bootstrap
 * Gulp
